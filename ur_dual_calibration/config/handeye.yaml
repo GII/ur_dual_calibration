@@ -1,0 +1,24 @@
+# Calibracion hand-eye UR5 (brazo I, MoveIt group Right_arm) <-> OAK-D
+# Generado por export_handeye_yaml.py
+# Metodo calibrateHandEye: PARK
+# Muestras: 19
+# Max diferencia traslacional entre metodos OpenCV: 1.65 mm
+#
+# El TF se publica de ur_dual_I_base_link a oak-d-base-frame (raiz del
+# arbol OAK) en lugar de oak_rgb_camera_optical_frame, para evitar el
+# conflicto de doble padre. La matriz aqui es la calibrada compuesta con
+# la transformacion interna OAK (optical -> root), consultada en vivo
+# del driver.
+
+handeye:
+  parent_frame: "ur_dual_I_base_link"
+  child_frame:  "oak-d-base-frame"
+  translation:
+    x: -0.5838499472
+    y: -0.6375543678
+    z: 0.7070709463
+  rotation_quaternion:
+    x: -0.1687930407
+    y: 0.1585581849
+    z: 0.6935994460
+    w: 0.6821202386

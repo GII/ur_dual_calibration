@@ -1,0 +1,120 @@
+# Poses pregrabadas para calibración hand-eye automática
+# Generado por extract_poses_from_samples.py
+# Total: 20 poses extraídas de calibration_data/samples/
+#
+# IMPORTANTE: estas poses dependen del montaje del ArUco respecto al flange.
+# Si cambia la pieza 3D del marcador o su orientación, hay que regenerarlas.
+
+metadata:
+  arm_prefix:    "ur_dual_I_"
+  controller:    "scaled_joint_trajectory_controller_I"
+  action_topic:  "/scaled_joint_trajectory_controller_I/follow_joint_trajectory"
+  joint_order:
+    - "ur_dual_I_shoulder_pan_joint"
+    - "ur_dual_I_shoulder_lift_joint"
+    - "ur_dual_I_elbow_joint"
+    - "ur_dual_I_wrist_1_joint"
+    - "ur_dual_I_wrist_2_joint"
+    - "ur_dual_I_wrist_3_joint"
+
+poses:
+  - id: "pose_001"
+    source_sample:   "sample_001.json"
+    reproj_error_px: 0.331
+    distance_m:      0.402
+    joints: [0.781216, -1.596398, -1.538408, -1.570793, 0.000024, 0.000020]
+  - id: "pose_002"
+    source_sample:   "sample_002.json"
+    reproj_error_px: 0.132
+    distance_m:      0.399
+    joints: [0.781204, -1.596377, -1.538408, -1.570785, -0.000017, 0.390006]
+  - id: "pose_003"
+    source_sample:   "sample_003.json"
+    reproj_error_px: 0.593
+    distance_m:      0.407
+    joints: [0.781201, -1.596374, -1.538384, -1.570810, 0.000020, -0.249980]
+  - id: "pose_004"
+    source_sample:   "sample_004.json"
+    reproj_error_px: 0.522
+    distance_m:      0.412
+    joints: [0.781199, -1.596411, -1.538441, -1.570847, 0.378021, 0.389212]
+  - id: "pose_005"
+    source_sample:   "sample_005.json"
+    reproj_error_px: 0.178
+    distance_m:      0.401
+    joints: [0.781225, -1.596399, -1.538459, -1.570814, 0.377991, 0.126406]
+  - id: "pose_006"
+    source_sample:   "sample_006.json"
+    reproj_error_px: 0.098
+    distance_m:      0.415
+    joints: [0.781159, -1.809243, -1.538387, -1.570794, 0.377967, 0.932773]
+  - id: "pose_007"
+    source_sample:   "sample_007.json"
+    reproj_error_px: 0.175
+    distance_m:      0.404
+    joints: [0.781208, -1.809193, -1.538490, -1.570783, 0.055917, 1.646785]
+  - id: "pose_008"
+    source_sample:   "sample_008.json"
+    reproj_error_px: 0.442
+    distance_m:      0.357
+    joints: [0.781187, -1.809219, -1.538446, -1.570764, -0.504027, 1.646798]
+  - id: "pose_009"
+    source_sample:   "sample_009.json"
+    reproj_error_px: 0.252
+    distance_m:      0.479
+    joints: [0.549225, -1.809231, -1.538438, -1.570830, -0.504112, 1.646823]
+  - id: "pose_010"
+    source_sample:   "sample_010.json"
+    reproj_error_px: 0.288
+    distance_m:      0.499
+    joints: [0.549162, -1.809214, -1.538446, -1.570794, -0.504157, 2.176176]
+  - id: "pose_011"
+    source_sample:   "sample_011.json"
+    reproj_error_px: 0.139
+    distance_m:      0.477
+    joints: [0.549134, -1.809214, -1.538356, -1.570759, -0.504169, 0.913878]
+  - id: "pose_012"
+    source_sample:   "sample_012.json"
+    reproj_error_px: 0.163
+    distance_m:      0.534
+    joints: [0.549209, -1.809186, -1.748010, -1.570784, -0.504158, 1.089545]
+  - id: "pose_013"
+    source_sample:   "sample_013.json"
+    reproj_error_px: 0.372
+    distance_m:      0.554
+    joints: [0.414423, -2.063247, -1.291198, -1.570773, -0.504129, 1.089507]
+  - id: "pose_014"
+    source_sample:   "sample_014.json"
+    reproj_error_px: 0.234
+    distance_m:      0.569
+    joints: [0.414439, -2.063240, -1.291269, -1.570801, -0.423802, 1.089537]
+  - id: "pose_015"
+    source_sample:   "sample_015.json"
+    reproj_error_px: 0.057
+    distance_m:      0.52
+    joints: [0.414386, -2.063205, -1.291233, -1.360404, -0.792964, 1.529120]
+  - id: "pose_016"
+    source_sample:   "sample_016.json"
+    reproj_error_px: 0.214
+    distance_m:      0.55
+    joints: [0.414352, -2.063223, -1.291211, -2.132800, -0.792972, 1.529165]
+  - id: "pose_017"
+    source_sample:   "sample_017.json"
+    reproj_error_px: 0.189
+    distance_m:      0.569
+    joints: [0.414343, -2.063205, -1.291262, -2.132784, -0.606952, 1.529152]
+  - id: "pose_018"
+    source_sample:   "sample_018.json"
+    reproj_error_px: 0.096
+    distance_m:      0.513
+    joints: [0.414428, -2.063203, -1.291253, -2.132854, -1.259775, 1.529108]
+  - id: "pose_019"
+    source_sample:   "sample_019.json"
+    reproj_error_px: 0.1
+    distance_m:      0.509
+    joints: [0.414382, -2.063231, -1.291203, -2.132832, -1.259735, 2.051492]
+  - id: "pose_020"
+    source_sample:   "sample_020.json"
+    reproj_error_px: 0.26
+    distance_m:      0.482
+    joints: [0.414423, -1.855161, -1.291187, -2.264424, -1.259768, 2.051534]
