@@ -2,14 +2,28 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>ur_dual_calibration</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="alvarez.fabian@outlook.com">gii-exp-1</maintainer>
-  <license>Apache-2.0</license>
+  <version>1.0.0</version>
+  <description>
+    Hand-eye calibration toolkit for the OAK-D camera and the dual UR5 + SoftHand
+    workstation. Publishes the calibrated static TF that connects the camera's
+    frame tree to the robot's base frame.
+  </description>
+
+  <maintainer email="d.rodriguezriv0@gmail.com">Daniel Rodríguez Rivas</maintainer>
+  <author email="d.rodriguezriv0@gmail.com">Daniel Rodríguez Rivas</author>
+  <author>Daniel Rodríguez Rivas</author>
+
+  <license>MIT</license>
+
+  <url type="website">https://github.com/GII/ur_dual_calibration</url>
+  <url type="bugtracker">https://github.com/GII/ur_dual_calibration/issues</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>tf2_ros</depend>
+
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
