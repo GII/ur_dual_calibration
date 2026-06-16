@@ -9,10 +9,6 @@ Flujo:
   2. Consulta el driver OAK en vivo → T(oak_rgb_optical → oak-d-base-frame).
   3. Compone las dos → T(ur_I_base → oak-d-base-frame).
   4. Escribe handeye.yaml con parent=ur_I_base y child=oak-d-base-frame.
-
-Requiere que la OAK-D esté publicando su árbol TF interno antes de correr
-este script (lanza el driver OAK antes). NO debe haber un
-static_transform_publisher nuestro activo (Ctrl+C cualquier launch previo).
 """
 import json
 import numpy as np
@@ -30,7 +26,7 @@ OUT_PATH   = REPO_ROOT / 'src' / 'ur_dual_calibration' / 'config' / 'handeye.yam
 
 METHOD = 'PARK'
 
-# Frame raíz de la isla OAK (el que no tiene padre dentro de su propio árbol).
+# Frame raíz de la isla OAK.
 # Se conecta el árbol del robot a ESTE frame, no al optical, para evitar el
 # conflicto de doble padre (el optical ya es hijo de oak_rgb_camera_frame).
 OAK_ROOT_FRAME    = 'oak-d-base-frame'
