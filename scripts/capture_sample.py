@@ -39,9 +39,6 @@ TOPIC_IMAGE  = '/oak_cam/oak/rgb/image_raw'
 TOPIC_INFO   = '/oak_cam/oak/rgb/camera_info'
 TOPIC_JOINTS = '/joint_states'
 
-# OJO: los grupos MoveIt y los prefijos de joints están "cruzados":
-#   Right_arm (perspectiva robot = tu izquierda) → joints con prefijo ur_dual_I_
-#   Left_arm  (perspectiva robot = tu derecha)    → joints con prefijo ur_dual_D_
 # El SoftHand está montado en el brazo con prefijo I_ (MoveIt group: Right_arm).
 BASE_FRAME = 'ur_dual_I_base_link'
 TOOL_FRAME = 'ur_dual_I_tool0'
