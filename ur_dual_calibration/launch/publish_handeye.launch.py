@@ -2,8 +2,7 @@
 Publica el TF estático obtenido por calibración hand-eye.
 
 Conecta el frame óptico de la OAK-D al frame base del UR5 con SoftHand
-(brazo I, MoveIt group Right_arm). Antes de correr este launch, los frames
-de la cámara forman una isla desconectada del árbol TF del robot.
+(brazo I, MoveIt group Right_arm). 
 """
 import os
 import yaml
