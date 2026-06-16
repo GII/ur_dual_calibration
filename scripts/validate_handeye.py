@@ -4,11 +4,8 @@ Validación de la calibración hand-eye por auto-consistencia.
 
 Para cada muestra, estima T_marker_in_flange. Si la calibración es correcta,
 debe ser casi idéntica en las 20 muestras (porque el marcador no se movió
-respecto al flange). La desviación estándar de las traslaciones es la
-métrica primaria de validación (Strobl & Hirzinger, 2006).
+respecto al flange). 
 
-Además: reproyecta el marcador sobre cada imagen capturada y guarda las
-imágenes con overlays para inspección visual.
 """
 import cv2
 import json
@@ -21,7 +18,7 @@ SAMPLES_DIR = REPO_ROOT / 'calibration_data' / 'samples'
 RESULT_DIR  = REPO_ROOT / 'calibration_data' / 'results'
 OVERLAY_DIR = REPO_ROOT / 'calibration_data' / 'overlays'
 
-METHOD_TO_USE = 'PARK'   # elegido por consistencia y robustez (Park & Martin 1994)
+METHOD_TO_USE = 'PARK'   # elegido por consistencia y robustez
 MARKER_LENGTH = 0.0427
 
 L = MARKER_LENGTH / 2.0
