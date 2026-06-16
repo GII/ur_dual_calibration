@@ -7,9 +7,7 @@ actual de calibración. Se corre UNA vez tras una recalibración manual
 exitosa. A partir de entonces, auto_calibrate.py puede replicar esa
 secuencia de poses automáticamente.
 
-Las poses solo se invalidan si cambia la geometría del montaje del marcador
-(p.ej. desmontas la pieza 3D y la pones en otro sitio). El movimiento del
-trípode NO las invalida, solo cambia qué poses ven el marcador.
+Las poses solo se invalidan si cambia la geometría del montaje del marcador.
 
 Uso:
   python3 extract_poses_from_samples.py
